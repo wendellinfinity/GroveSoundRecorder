@@ -3,7 +3,12 @@ Created by Wendell Capili, August 29, 2011.
 
 adapted from Seeedstudio's sample code:
 http://garden.seeedstudio.com/index.php?title=Twig_-_Sound_Recorder_v0.92b
- 
+
+NOTE: 
+1. We cannot use pin7 because the lib uses direct port manipulation and pin7 and 8 are on different pin groups 
+2. Also, we cannot also use pins 0 and 1 for good measure because they are the RX and TX serial pins.
+3. We cannot also use pin13 as it is short of sel2 pin
+
 For port manipulation code, refer to:
 http://www.arduino.cc/en/Reference/PortManipulation
  

@@ -12,7 +12,13 @@
 #include <GroveSoundRecorder.h>
 
 // initialize a recorder
-GroveSoundRecorder recorder(2);
+#define SEL1 2 // this will be the pin# on the Stem Base Shield, only use the DIGITAL pins
+// NOTE: for this example, we cannot use pin7 because the lib
+//     uses direct port manipulation and pin7 and 8 are on different pin groups
+// NOTE: we cannot also use pins 0 and 1 for good measure because
+//     they are the RX and TX serial pins
+// NOTE: we cannot also use pin13 as it is short of sel2 pin
+GroveSoundRecorder recorder(SEL1);
 
 void setup() {
      Serial.begin(9600);
