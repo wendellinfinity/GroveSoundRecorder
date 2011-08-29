@@ -1,0 +1,10 @@
+Library for the Grove Sound Recorder Module
+Created by Wendell Capili, August 29, 2011.
+
+adapted from Seeedstudio's sample code:
+http://garden.seeedstudio.com/index.php?title=Twig_-_Sound_Recorder_v0.92b
+ 
+For port manipulation code, refer to:
+http://www.arduino.cc/en/Reference/PortManipulation
+ 
+Released into the public domain.
