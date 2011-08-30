@@ -50,6 +50,7 @@ class GroveSoundRecorder {
     void beginRecord(TRACKS seg); // limit to 30s for safety
     void stopRecord();    
     void beginPlayback(TRACKS seg);
+    void beginPlaybackLoop(TRACKS seg);    
     void stopPlayback();    
     
     private:

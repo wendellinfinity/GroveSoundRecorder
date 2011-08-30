@@ -95,6 +95,14 @@ void GroveSoundRecorder::beginPlayback(TRACKS seg) {
     pushCommand(ZERO, PLAYSTOP);
 }
 
+void GroveSoundRecorder::beginPlaybackLoop(TRACKS seg) {
+    if (seg < TRACK2 || seg > TRACK4) {
+        return;
+    }
+    // play continuously
+    pushCommand(seg, PLAYSTART);
+}
+
 void GroveSoundRecorder::stopPlayback() {
     pushCommand(ZERO, PLAYSTOP);
 }
